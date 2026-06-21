@@ -96,8 +96,18 @@ header {
     display: none;
 }
 
-.comTarefa {
+.tarefasAtivas {
     border:  2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tarefasConcluidas{
+    border:  2px dashed grey;
     border-radius: 15px;
     padding: 10px;
     margin-top: 10px;
@@ -109,4 +119,20 @@ header {
 #tarefas{
     display: flex;
     flex-direction: column-reverse;
+}
+
+.btnExcluir{
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnExcluir:hover{
+    background-color: #f00000;
 }
